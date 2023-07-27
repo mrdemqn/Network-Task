@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Post View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddPostStoryboard" id="Y6W-OH-hqX" customClass="AddPostViewController" customModule="Network_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFq-9G-C0v">
+                                <rect key="frame" x="25" y="109" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLu-u8-Yyc">
+                                <rect key="frame" x="25" y="145" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XT-oB-opH">
+                                <rect key="frame" x="25" y="194" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zpi-CL-zpq">
+                                <rect key="frame" x="25" y="237" width="343" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jFq-9G-C0v" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="3bX-sB-3FQ"/>
+                            <constraint firstItem="5XT-oB-opH" firstAttribute="top" secondItem="qLu-u8-Yyc" secondAttribute="bottom" constant="15" id="6qT-e8-gy4"/>
+                            <constraint firstItem="qLu-u8-Yyc" firstAttribute="leading" secondItem="jFq-9G-C0v" secondAttribute="leading" id="KYu-fh-fPn"/>
+                            <constraint firstItem="jFq-9G-C0v" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Lnp-Xc-Qno"/>
+                            <constraint firstItem="5XT-oB-opH" firstAttribute="trailing" secondItem="qLu-u8-Yyc" secondAttribute="trailing" id="NfC-TE-fbj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Zpi-CL-zpq" secondAttribute="bottom" constant="453" id="ZYs-WA-rsi"/>
+                            <constraint firstItem="Zpi-CL-zpq" firstAttribute="trailing" secondItem="5XT-oB-opH" secondAttribute="trailing" id="a2O-Qc-r0d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jFq-9G-C0v" secondAttribute="trailing" constant="25" id="cib-ci-5iU"/>
+                            <constraint firstItem="5XT-oB-opH" firstAttribute="leading" secondItem="qLu-u8-Yyc" secondAttribute="leading" id="gUL-Pv-z7i"/>
+                            <constraint firstItem="qLu-u8-Yyc" firstAttribute="trailing" secondItem="jFq-9G-C0v" secondAttribute="trailing" id="gwp-12-dhe"/>
+                            <constraint firstItem="Zpi-CL-zpq" firstAttribute="top" secondItem="5XT-oB-opH" secondAttribute="bottom" constant="22" id="iyV-ur-E6q"/>
+                            <constraint firstItem="Zpi-CL-zpq" firstAttribute="leading" secondItem="5XT-oB-opH" secondAttribute="leading" id="osK-DO-Zwt"/>
+                            <constraint firstItem="qLu-u8-Yyc" firstAttribute="top" secondItem="jFq-9G-C0v" secondAttribute="bottom" constant="15" id="uD2-Ry-0ZU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyTextView" destination="Zpi-CL-zpq" id="v2P-pw-0sf"/>
+                        <outlet property="titleTextField" destination="qLu-u8-Yyc" id="2Eo-bF-A0U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Post" rowHeight="96" id="hmt-tu-oAf" customClass="PostTableViewCell" customModule="Network_Training" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hmt-tu-oAf" id="KiH-uk-0R6">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e8-DG-HVA">
+                        <rect key="frame" x="20" y="16" width="353" height="28.666666666666671"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ZaN-ps-aqy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDy-Is-cRB">
+                        <rect key="frame" x="20" y="52.666666666666657" width="353" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="NqW-nf-cSs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qDy-Is-cRB" firstAttribute="leading" secondItem="KiH-uk-0R6" secondAttribute="leading" constant="20" symbolic="YES" id="IF2-aY-rIh"/>
+                    <constraint firstAttribute="trailing" secondItem="qDy-Is-cRB" secondAttribute="trailing" constant="20" symbolic="YES" id="KKN-PV-4pb"/>
+                    <constraint firstItem="qDy-Is-cRB" firstAttribute="top" secondItem="8e8-DG-HVA" secondAttribute="bottom" constant="8" symbolic="YES" id="PEZ-cF-gn7"/>
+                    <constraint firstItem="8e8-DG-HVA" firstAttribute="top" secondItem="KiH-uk-0R6" secondAttribute="top" constant="16" id="PaJ-pI-JVc"/>
+                    <constraint firstAttribute="trailing" secondItem="8e8-DG-HVA" secondAttribute="trailing" constant="20" symbolic="YES" id="W9v-bo-dC1"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qDy-Is-cRB" secondAttribute="bottom" constant="15" id="hza-Je-Gj4"/>
+                    <constraint firstItem="8e8-DG-HVA" firstAttribute="leading" secondItem="KiH-uk-0R6" secondAttribute="leading" constant="20" symbolic="YES" id="mY2-P4-1e6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyLabel" destination="qDy-Is-cRB" id="dgx-w2-ngs"/>
+                <outlet property="titleLabel" destination="8e8-DG-HVA" id="Ov6-85-Flg"/>
+            </connections>
+            <point key="canvasLocation" x="246.56488549618319" y="-32.04225352112676"/>
+        </tableViewCell>
+    </objects>
+</document>
